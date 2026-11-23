@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b10">
+    <meta name="description" content="Personal IT portfolio — Infrastructure, Networking, DevOps, Technical Support and Web Development.">
+    <title>Georgi Aghajanyan | IT Professional</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="page-grid"></div>
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>GA<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#stack" class="nav-link">Stack</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#services" class="nav-link">Services</a>
+            </nav>
+
+            <a href="#contact" class="nav-contact">
+                Let's talk <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <div class="availability reveal">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+
+                <p class="hero-eyebrow reveal">
+                    IT PROFESSIONAL <span class="accent">/</span> INFRASTRUCTURE <span class="accent">/</span> TECHNOLOGY
+                </p>
+
+                <h1 class="hero-title reveal">
+                    Building Technology.<br>
+                    Solving Problems.<br>
+                    <span class="gradient-text">Creating Impact.</span>
+                </h1>
+
+                <p class="hero-description reveal">
+                    I connect technology with real-world solutions.
+                    From IT infrastructure and networking to automation,
+                    DevOps and web development — building systems that work.
+                </p>
+
+                <div class="hero-buttons reveal">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me
+                        <i data-lucide="message-circle"></i>
+                    </a>
+                </div>
+
+                <div class="hero-meta reveal">
+                    <div class="hero-location">
+                        <i data-lucide="map-pin"></i>
+                        Armenia
+                    </div>
+                    <div class="hero-clock">
+                        <i data-lucide="clock"></i>
+                        <span id="clock">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terminal -->
+            <div class="hero-terminal reveal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                    </div>
+                    <span class="terminal-title">georgi@system — terminal</span>
+                    <i data-lucide="terminal" class="terminal-icon"></i>
+                </div>
+
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">georgi@portfolio:~$</span>
+                        <span class="terminal-command">whoami</span>
+                    </div>
+                    <div class="terminal-output">IT Support & Infrastructure Specialist</div>
+
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">georgi@portfolio:~$</span>
+                        <span class="terminal-command">systemctl status ambition</span>
+                    </div>
+                    <div class="terminal-output status-output">
+                        <span class="success-text">● active (running)</span><br>
+                        <span class="muted-text">Learning · Building · Improving</span>
+                    </div>
+
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">georgi@portfolio:~$</span>
+                        <span class="terminal-command">cat mission.txt</span>
+                    </div>
+                    <div class="terminal-output">
+                        <span class="accent">Continuous improvement.</span><br>
+                        <span class="accent">Reliable infrastructure.</span><br>
+                        <span class="accent">Practical solutions.</span>
+                    </div>
+
+                    <div class="terminal-line terminal-last">
+                        <span class="terminal-prompt">georgi@portfolio:~$</span>
+                        <span class="typing-command" id="typingCommand"></span>
+                        <span class="terminal-cursor">▋</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+            <div class="section-container">
+                <div class="section-heading reveal">
+                    <span class="section-label">01 / ABOUT ME</span>
+                    <h2>Technology is more than tools.<br><span class="text-muted">It's how we solve problems.</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-visual reveal">
+                        <div class="profile-card">
+                            <div class="profile-card-top">
+                                <span class="card-label">PROFILE / 001</span>
+                                <i data-lucide="scan"></i>
+                            </div>
+
+                            <div class="profile-placeholder">
+                                <div class="profile-circle">
+                                    <i data-lucide="user-round"></i>
+                                </div>
+                                <div class="profile-orbit orbit-1"></div>
+                                <div class="profile-orbit orbit-2"></div>
+                            </div>
+
+                            <div class="profile-card-bottom">
+                                <div>
+                                    <h3>Georgi Aghajanyan</h3>
+                                    <p>IT Support · Infrastructure</p>
+                                </div>
+                                <span class="profile-number">GA_01</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-tag tag-1">
+                            <i data-lucide="shield-check"></i>
+                            Problem Solver
+                        </div>
+
+                        <div class="floating-tag tag-2">
+                            <i data-lucide="network"></i>
+                            Infrastructure
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal">
+                        <p class="about-lead">
+                            I'm an IT professional passionate about building,
+                            maintaining, and improving the systems people
+                            depend on every day.
+                        </p>
+
+                        <p class="about-text">
+                            My work and interests span technical support,
+                            system administration, network infrastructure,
+                            troubleshooting, monitoring, automation, and software
+                            development. I enjoy understanding how technology
+                            works beneath the surface — and finding practical
+                            solutions when things don't.
+                        </p>
+
+                        <p class="about-text">
+                            I believe in learning through hands-on experience,
+                            solving real problems, and continuously improving
+                            technical and operational processes.
+                        </p>
+
+                        <div class="about-info-grid">
+                            <div class="info-card">
+                                <i data-lucide="server"></i>
+                                <span>Infrastructure</span>
+                            </div>
+                            <div class="info-card">
+                                <i data-lucide="network"></i>
+                                <span>Networking</span>
+                            </div>
+                            <div class="info-card">
+                                <i data-lucide="workflow"></i>
+                                <span>Automation</span>
+                            </div>
+                            <div class="info-card">
+                                <i data-lucide="code-2"></i>
+                                <span>Development</span>
+                            </div>
+                        </div>
+
+                        <a href="#experience" class="text-link">
+                            Discover my journey <i data-lucide="arrow-down-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH STACK -->
+        <section class="section stack-section" id="stack">
+            <div class="section-container">
+                <div class="section-heading reveal">
+                    <span class="section-label">02 / TECHNOLOGY STACK</span>
+                    <h2>Tools I work with.<br><span class="text-muted">Systems I build.</span></h2>
+                    <p class="section-description">
+                        Technologies are tools. Understanding how to use them
+                        together is what makes the difference.
+                    </p>
+                </div>
+
+                <div class="stack-categories">
+
+                    <div class="stack-category reveal">
+                        <div class="stack-category-header">
+                            <div class="category-icon"><i data-lucide="server"></i></div>
+                            <div>
+                                <h3>Infrastructure</h3>
+                                <p>Systems, networks & administration</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-grid">
+                            <div class="tech-card" data-tech="Windows">
+                                <i data-lucide="monitor"></i>
+                                <span>Windows</span>
+                            </div>
+                            <div class="tech-card" data-tech="Linux">
+                                <i data-lucide="terminal"></i>
+                                <span>Linux</span>
+                            </div>
+                            <div class="tech-card" data-tech="Networking">
+                                <i data-lucide="network"></i>
+                                <span>Networking</span>
+                            </div>
+                            <div class="tech-card" data-tech="MikroTik">
+                                <i data-lucide="router"></i>
+                                <span>MikroTik</span>
+                            </div>
+                            <div class="tech-card" data-tech="TCP/IP">
+                                <i data-lucide="globe"></i>
+                                <span>TCP/IP</span>
+                            </div>
+                            <div class="tech-card" data-tech="DNS">
+                                <i data-lucide="radar"></i>
+                                <span>DNS</span>
+                            </div>
+                            <div class="tech-card" data-tech="DHCP">
+                                <i data-lucide="plug"></i>
+                                <span>DHCP</span>
+                            </div>
+                            <div class="tech-card" data-tech="VLAN">
+                                <i data-lucide="layers"></i>
+                                <span>VLAN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stack-category reveal">
+                        <div class="stack-category-header">
+                            <div class="category-icon"><i data-lucide="container"></i></div>
+                            <div>
+                                <h3>DevOps & Cloud</h3>
+                                <p>Automation, deployment & monitoring</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-grid">
+                            <div class="tech-card" data-tech="Docker">
+                                <i data-lucide="box"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="tech-card" data-tech="Kubernetes">
+                                <i data-lucide="boxes"></i>
+                                <span>Kubernetes</span>
+                            </div>
+                            <div class="tech-card" data-tech="Git">
+                                <i data-lucide="git-branch"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="tech-card" data-tech="GitHub">
+                                <i data-lucide="github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tech-card" data-tech="AWS">
+                                <i data-lucide="cloud"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="tech-card" data-tech="Terraform">
+                                <i data-lucide="blocks"></i>
+                                <span>Terraform</span>
+                            </div>
+                            <div class="tech-card" data-tech="Nginx">
+                                <i data-lucide="zap"></i>
+                                <span>Nginx</span>
+                            </div>
+                            <div class="tech-card" data-tech="Zabbix">
+                                <i data-lucide="activity"></i>
+                                <span>Zabbix</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stack-category reveal">
+                        <div class="stack-category-header">
+                            <div class="category-icon"><i data-lucide="code-2"></i></div>
+                            <div>
+                                <h3>Development</h3>
+                                <p>Web applications & programming</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-grid">
+                            <div class="tech-card" data-tech="HTML">
+                                <i data-lucide="file-code"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-card" data-tech="CSS">
+                                <i data-lucide="palette"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-card" data-tech="JavaScript">
+                                <i data-lucide="braces"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-card" data-tech="React">
+                                <i data-lucide="atom"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-card" data-tech="Python">
+                                <i data-lucide="code"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-card" data-tech="FastAPI">
+                                <i data-lucide="rocket"></i>
+                                <span>FastAPI</span>
+                            </div>
+                            <div class="tech-card" data-tech="SQL">
+                                <i data-lucide="database"></i>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-heading reveal">
+                    <span class="section-label">03 / SELECTED PROJECTS</span>
+                    <h2>Things I've worked on.<br><span class="text-muted">Things I've built.</span></h2>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card project-large reveal">
+                        <div class="project-preview network-preview">
+                            <div class="preview-top">
+                                <span>NETWORK / TOPOLOGY</span>
+                                <span class="preview-status"><span></span> OPERATIONAL</span>
+                            </div>
+                            <div class="network-diagram">
+                                <div class="network-node central-node">
+                                    <i data-lucide="router"></i>
+                                    <span>CORE</span>
+                                </div>
+                                <div class="network-node node-1">
+                                    <i data-lucide="server"></i>
+                                    <span>SERVER</span>
+                                </div>
+                                <div class="network-node node-2">
+                                    <i data-lucide="monitor"></i>
+                                    <span>CLIENT</span>
+                                </div>
+                                <div class="network-node node-3">
+                                    <i data-lucide="wifi"></i>
+                                    <span>WLAN</span>
+                                </div>
+                                <div class="network-node node-4">
+                                    <i data-lucide="shield"></i>
+                                    <span>FIREWALL</span>
+                                </div>
+                                <svg class="network-lines" viewBox="0 0 500 280">
+                                    <line x1="250" y1="140" x2="120" y2="60"/>
+                                    <line x1="250" y1="140" x2="380" y2="60"/>
+                                    <line x1="250" y1="140" x2="120" y2="220"/>
+                                    <line x1="250" y1="140" x2="380" y2="220"/>
+                                </svg>
+                            </div>
+                            <div class="preview-bottom">
+                                <span>192.168.1.0/24</span>
+                                <span>4 NODES CONNECTED</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-type">INFRASTRUCTURE / NETWORKING</div>
+                            <h3>IT Infrastructure & Network Administration</h3>
+                            <p>
+                                Network configuration, segmentation, connectivity,
+                                administration, and troubleshooting of infrastructure
+                                environments.
+                            </p>
+                            <div class="project-tags">
+                                <span>MikroTik</span>
+                                <span>VLAN</span>
+                                <span>DHCP</span>
+                                <span>TCP/IP</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-index">PROJECT_01</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card reveal">
+                        <div class="project-preview monitoring-preview">
+                            <div class="monitor-window">
+                                <div class="monitor-header">
+                                    <span>MONITORING SYSTEM</span>
+                                    <span class="monitor-live">LIVE</span>
+                                </div>
+                                <div class="monitor-metric">
+                                    <span>Availability</span>
+                                    <strong>99.9<small>%</small></strong>
+                                </div>
+                                <div class="chart-container">
+                                    <div class="chart-bars">
+                                        <span style="height: 38%"></span>
+                                        <span style="height: 52%"></span>
+                                        <span style="height: 44%"></span>
+                                        <span style="height: 68%"></span>
+                                        <span style="height: 56%"></span>
+                                        <span style="height: 76%"></span>
+                                        <span style="height: 63%"></span>
+                                        <span style="height: 89%"></span>
+                                        <span style="height: 73%"></span>
+                                        <span style="height: 95%"></span>
+                                        <span style="height: 80%"></span>
+                                        <span style="height: 100%"></span>
+                                    </div>
+                                </div>
+                                <div class="monitor-footer">
+                                    <span><i></i> 5 HOSTS</span>
+                                    <span>24H MONITORING</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-type">MONITORING / OBSERVABILITY</div>
+                            <h3>Monitoring & Observability</h3>
+                            <p>
+                                Website monitoring, availability checks,
+                                infrastructure visibility, alerts, and
+                                performance tracking.
+                            </p>
+                            <div class="project-tags">
+                                <span>Zabbix</span>
+                                <span>Linux</span>
+                                <span>Monitoring</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-index">PROJECT_02</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card reveal">
+                        <div class="project-preview market-preview">
+                            <div class="market-ui">
+                                <div class="market-sidebar">
+                                    <div class="market-logo">MI<span>.</span></div>
+                                    <div class="market-side-icon active"><i data-lucide="layout-dashboard"></i></div>
+                                    <div class="market-side-icon"><i data-lucide="chart-no-axes-combined"></i></div>
+                                    <div class="market-side-icon"><i data-lucide="database"></i></div>
+                                    <div class="market-side-icon"><i data-lucide="settings"></i></div>
+                                </div>
+                                <div class="market-main">
+                                    <div class="market-title">
+                                        <span>MarketInsight</span>
+                                        <i data-lucide="bell"></i>
+                                    </div>
+                                    <div class="market-stat-row">
+                                        <div class="market-stat">
+                                            <span>Market Data</span>
+                                            <strong>+12.8%</strong>
+                                        </div>
+                                        <div class="market-stat">
+                                            <span>Analytics</span>
+                                            <strong>86.4</strong>
+                                        </div>
+                                    </div>
+                                    <div class="market-chart">
+                                        <svg viewBox="0 0 320 100" preserveAspectRatio="none">
+                                            <path d="M0 80 L35 68 L65 76 L95 40 L130 52 L165 25 L200 45 L230 16 L260 30 L290 5 L320 12" fill="none" stroke="#4b9dff" stroke-width="2"/>
+                                            <path d="M0 80 L35 68 L65 76 L95 40 L130 52 L165 25 L200 45 L230 16 L260 30 L290 5 L320 12 L320 100 L0 100 Z" fill="url(#marketGradient)" opacity=".3"/>
+                                            <defs>
+                                                <linearGradient id="marketGradient" x1="0" y1="0" x2="0" y2="1">
+                                                    <stop offset="0%" stop-color="#4b9dff"/>
+                                                    <stop offset="100%" stop-color="#4b9dff" stop-opacity="0"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-type">DEVELOPMENT / CLOUD</div>
+                            <h3>MarketInsight Cloud</h3>
+                            <p>
+                                A web-based market intelligence concept combining
+                                data collection, backend APIs, analytics,
+                                and containerized infrastructure.
+                            </p>
+                            <div class="project-tags">
+                                <span>FastAPI</span>
+                                <span>Docker</span>
+                                <span>SQLite</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-index">PROJECT_03</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card project-large reveal">
+                        <div class="project-preview web-preview">
+                            <div class="browser-frame">
+                                <div class="browser-bar">
+                                    <div class="browser-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="browser-address">
+                                        <i data-lucide="lock"></i>
+                                        portfolio.local
+                                    </div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="browser-nav">
+                                        <strong>STUDIO<span>.</span></strong>
+                                        <div>WORK&nbsp;&nbsp; ABOUT&nbsp;&nbsp; CONTACT</div>
+                                    </div>
+                                    <div class="browser-hero">
+                                        <div class="browser-small">CREATIVE DIGITAL EXPERIENCES</div>
+                                        <div class="browser-heading">DESIGN.<br><span>DEVELOP.</span><br>CREATE.</div>
+                                        <div class="browser-button">EXPLORE →</div>
+                                    </div>
+                                    <div class="browser-decor"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-type">WEB DEVELOPMENT / DESIGN</div>
+                            <h3>Web Development Projects</h3>
+                            <p>
+                                Responsive websites and web interfaces
+                                built with attention to usability,
+                                design, performance, and functionality.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-index">PROJECT_04</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section experience-section" id="experience">
+            <div class="section-container">
+                <div class="section-heading reveal">
+                    <span class="section-label">04 / EXPERIENCE & JOURNEY</span>
+                    <h2>A continuous process<br><span class="text-muted">of learning and building.</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"><span></span></div>
+                        <div class="timeline-date">PROFESSIONAL EXPERIENCE</div>
+                        <div class="timeline-content">
+                            <h3>IT Support Specialist</h3>
+                            <span class="timeline-subtitle">Technical Support & IT Operations</span>
+                            <p>
+                                Supporting users, resolving technical issues,
+                                maintaining systems, managing devices,
+                                troubleshooting software and hardware,
+                                and ensuring reliable daily operations.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>IT Support</span>
+                                <span>Windows</span>
+                                <span>Troubleshooting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"><span></span></div>
+                        <div class="timeline-date">TEAM & OPERATIONS</div>
+                        <div class="timeline-content">
+                            <h3>Technical Team Lead</h3>
+                            <span class="timeline-subtitle">Team Coordination & Technical Operations</span>
+                            <p>
+                                Coordinating technical tasks, supporting team members,
+                                organizing daily workflows, resolving escalated issues,
+                                and improving operational efficiency.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Team Coordination</span>
+                                <span>Operations</span>
+                                <span>Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"><span></span></div>
+                        <div class="timeline-date">HANDS-ON PROJECTS</div>
+                        <div class="timeline-content">
+                            <h3>IT Infrastructure & Networking</h3>
+                            <span class="timeline-subtitle">Practical Labs & Administration</span>
+                            <p>
+                                Working with networking configurations,
+                                infrastructure components, connectivity,
+                                segmentation, access control, and system administration.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>MikroTik</span>
+                                <span>TCP/IP</span>
+                                <span>Networking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"><span></span></div>
+                        <div class="timeline-date">CONTINUOUS LEARNING</div>
+                        <div class="timeline-content">
+                            <h3>DevOps Learning & Projects</h3>
+                            <span class="timeline-subtitle">Cloud · Automation · Deployment</span>
+                            <p>
+                                Developing practical knowledge of Docker,
+                                Kubernetes, AWS, CI/CD, infrastructure as code,
+                                monitoring, and modern deployment practices.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Docker</span>
+                                <span>AWS</span>
+                                <span>Kubernetes</span>
+                                <span>Terraform</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section services-section" id="services">
+            <div class="section-container">
+                <div class="section-heading reveal">
+                    <span class="section-label">05 / WHAT I DO</span>
+                    <h2>Practical solutions.<br><span class="text-muted">Reliable technology.</span></h2>
+                    <p class="section-description">
+                        Helping people and businesses solve technical challenges
+                        and improve the systems they use.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="service-card reveal">
+                        <div class="service-number">01</div>
+                        <div class="service-icon"><i data-lucide="life-buoy"></i></div>
+                        <h3>IT Support & Troubleshooting</h3>
+                        <p>Hardware, software, operating systems, user support, and technical problem-solving.</p>
+                        <span class="service-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="service-number">02</div>
+                        <div class="service-icon"><i data-lucide="network"></i></div>
+                        <h3>Network Setup & Administration</h3>
+                        <p>Network configuration, connectivity, routers, switches, Wi-Fi, and LAN environments.</p>
+                        <span class="service-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="service-number">03</div>
+                        <div class="service-icon"><i data-lucide="activity"></i></div>
+                        <h3>Infrastructure Monitoring</h3>
+                        <p>Availability monitoring, system visibility, alerts, and performance tracking.</p>
+                        <span class="service-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="service-number">04</div>
+                        <div class="service-icon"><i data-lucide="code-2"></i></div>
+                        <h3>Website Development</h3>
+                        <p>Modern, responsive websites and landing pages built around practical requirements.</p>
+                        <span class="service-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="service-number">05</div>
+                        <div class="service-icon"><i data-lucide="gauge"></i></div>
+                        <h3>System Optimization</h3>
+                        <p>Improving performance, simplifying configurations, and optimizing everyday workflows.</p>
+                        <span class="service-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </div>
+
+                    <div class="service-card reveal">
+                        <div class="service-number">06</div>
+                        <div class="service-icon"><i data-lucide="messages-square"></i></div>
+                        <h3>Technical Consultation</h3>
+                        <p>Guidance on IT infrastructure, technology choices, systems, and technical planning.</p>
+                        <span class="service-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+            <div class="section-container">
+                <div class="contact-wrapper">
+                    <div class="contact-info reveal">
+                        <span class="section-label">06 / GET IN TOUCH</span>
+                        <h2>Let's build<br><span class="gradient-text">something useful.</span></h2>
+                        <p>
+                            Have an idea, a technical challenge, or an opportunity?
+                            Let's connect and find a solution.
+                        </p>
+
+                        <div class="contact-links">
+                            <a href="mailto:your.email@example.com" class="contact-link">
+                                <div class="contact-link-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <span>Email</span>
+                                    <strong>your.email@example.com</strong>
+                                </div>
+                                <i data-lucide="arrow-up-right" class="contact-link-arrow"></i>
+                            </a>
+
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <div class="contact-link-icon"><i data-lucide="linkedin"></i></div>
+                                <div>
+                                    <span>LinkedIn</span>
+                                    <strong>Connect professionally</strong>
+                                </div>
+                                <i data-lucide="arrow-up-right" class="contact-link-arrow"></i>
+                            </a>
+
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <div class="contact-link-icon"><i data-lucide="github"></i></div>
+                                <div>
+                                    <span>GitHub</span>
+                                    <strong>Explore my repositories</strong>
+                                </div>
+                                <i data-lucide="arrow-up-right" class="contact-link-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper reveal">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-heading">
+                                <h3>Send a message</h3>
+                                <span><i data-lucide="lock"></i> Secure connection</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">Your name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required minlength="2">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can I help?" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me a little about your project..." required minlength="10"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary send-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+
+                            <div class="form-message" id="formMessage"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>GA<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <p>Designed & built with curiosity and code.</p>
+
+            <div class="footer-right">
+                <span>© <span id="currentYear"></span> Georgi Aghajanyan</span>
+                <span class="footer-status"><span class="status-dot"></span> All systems operational</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
